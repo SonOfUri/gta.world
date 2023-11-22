@@ -68,30 +68,55 @@
             display: none;
         }
     </style>
-    <audio id="myAudio" autoplay loop>
-        <source src="default/sound.m4a" type="audio/mp3">
-        Your browser does not support the audio tag.
-    </audio>
+    <audio id="background-audio" autoplay loop>
+        <source src="default/sound.m4a" type="audio/mpeg">
+      </audio>
     
-    <script>
-        // Get the audio element
-        var audio = document.getElementById('myAudio');
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const audio = document.getElementById("background-audio");
+          const constantVolume = 0.2;
+          let isMouseMoving = false;
+          let volumeTimeout;
     
-        // Function to play the audio
-        function playAudio() {
+          // Function to set the volume to the maximum level
+          function setMaxVolume() {
+            audio.volume = 1.0;
+          }
+    
+          // Function to set the volume back to the constant level
+          function setConstantVolume() {
+            audio.volume = constantVolume;
+          }
+    
+          // Function to start sound and set volume
+          function startSound() {
+            setMaxVolume();
             audio.play();
-            
-            // Remove the event listeners to prevent multiple plays
-            // document.removeEventListener('click', playAudio);
-            document.removeEventListener('scroll', playAudio);
-            // document.removeEventListener('mousemove', playAudio);
-        }
+            document.removeEventListener("click", startSound); // Remove the click event listener after starting sound
+          }
     
-        // Add event listeners to the document
-        // document.addEventListener('click', playAudio);
-        document.addEventListener('scroll', playAudio);
-        // document.addEventListener('mousemove', playAudio);
-    </script>
+          // Add a click event listener to the entire document to start sound
+          document.addEventListener("click", startSound);
+    
+          // Update the audio volume when the mouse moves
+          document.addEventListener("mousemove", function () {
+            if (!isMouseMoving) {
+              isMouseMoving = true;
+              setMaxVolume();
+            }
+    
+            clearTimeout(volumeTimeout);
+            volumeTimeout = setTimeout(function () {
+              isMouseMoving = false;
+              setConstantVolume();
+            }, 1000); // Adjust the delay in milliseconds as needed
+          });
+    
+          // Set the initial volume to the constant level
+          audio.volume = constantVolume;
+        });
+      </script>
     <div id="preloader">
         <div id="loading-center">
             <div id="loading-center-absolute">
