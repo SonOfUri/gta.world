@@ -82,14 +82,12 @@
             audio.play();
             
             // Remove the event listeners to prevent multiple plays
-            document.removeEventListener('click', playAudio);
-            document.removeEventListener('scroll', playAudio);
             document.removeEventListener('mousemove', playAudio);
         }
     
         // Add event listeners to the document
-        document.addEventListener('click', playAudio);
-        document.addEventListener('scroll', playAudio);
+        // document.addEventListener('click', playAudio);
+        // document.addEventListener('scroll', playAudio);
         document.addEventListener('mousemove', playAudio);
     </script>
     <div id="preloader">
