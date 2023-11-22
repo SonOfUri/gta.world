@@ -7,14 +7,12 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>GTA VI: GROK DIARIES</title>
-    <meta name="description"
-        content="GTA VI: GROK DIARIES">
+    <meta name="description" content="GTA VI: GROK DIARIES">
     <meta name="author" content="GTA World Team">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="GTA VI: GROK DIARIES" />
-    <meta property="og:description"
-        content="GTA VI: GROK DIARIES" />
+    <meta property="og:description" content="GTA VI: GROK DIARIES" />
     <meta property="og:url" content="index.html" />
     <!-- <meta property="og:image" content="newsite/assets/images/gtaw/opengraph.html" /> -->
     <meta name="csrf-token" content="nqU8wwuWjvRaLUrTnKPOEvzgQRcmvTHwtq3Is5Ga">
@@ -64,61 +62,61 @@
 <body>
 
     <style>
-        audio{
+        audio {
             display: none;
         }
     </style>
     <audio id="background-audio" autoplay loop>
         <!-- <source src="default/sound.m4a" type="audio/mpeg"> -->
-        <source src="default/sound.mp3" type="audio/mpeg">
+        <source src="sound.mp3" type="audio/mpeg">
 
-      </audio>
-    
-      <script>
+    </audio>
+
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
-          const audio = document.getElementById("background-audio");
-          const constantVolume = 0.9;
-          let isMouseMoving = false;
-          let volumeTimeout;
-    
-          // Function to set the volume to the maximum level
-          function setMaxVolume() {
-            audio.volume = 1.0;
-          }
-    
-          // Function to set the volume back to the constant level
-          function setConstantVolume() {
-            audio.volume = constantVolume;
-          }
-    
-          // Function to start sound and set volume
-          function startSound() {
-            setMaxVolume();
-            audio.play();
-            document.removeEventListener("click", startSound); // Remove the click event listener after starting sound
-          }
-    
-          // Add a click event listener to the entire document to start sound
-          document.addEventListener("click", startSound);
-    
-          // Update the audio volume when the mouse moves
-          document.addEventListener("mousemove", function () {
-            if (!isMouseMoving) {
-              isMouseMoving = true;
-              setMaxVolume();
+            const audio = document.getElementById("background-audio");
+            const constantVolume = 0.9;
+            let isMouseMoving = false;
+            let volumeTimeout;
+
+            // Function to set the volume to the maximum level
+            function setMaxVolume() {
+                audio.volume = 1.0;
             }
-    
-            clearTimeout(volumeTimeout);
-            volumeTimeout = setTimeout(function () {
-              isMouseMoving = false;
-              setConstantVolume();
-            }, 1000); // Adjust the delay in milliseconds as needed
-          });
-    
-          // Set the initial volume to the constant level
-          audio.volume = constantVolume;
+
+            // Function to set the volume back to the constant level
+            function setConstantVolume() {
+                audio.volume = constantVolume;
+            }
+
+            // Function to start sound and set volume
+            function startSound() {
+                setMaxVolume();
+                audio.play();
+                document.removeEventListener("click", startSound); // Remove the click event listener after starting sound
+            }
+
+            // Add a click event listener to the entire document to start sound
+            document.addEventListener("click", startSound);
+
+            // Update the audio volume when the mouse moves
+            document.addEventListener("mousemove", function () {
+                if (!isMouseMoving) {
+                    isMouseMoving = true;
+                    setMaxVolume();
+                }
+
+                clearTimeout(volumeTimeout);
+                volumeTimeout = setTimeout(function () {
+                    isMouseMoving = false;
+                    setConstantVolume();
+                }, 1000); // Adjust the delay in milliseconds as needed
+            });
+
+            // Set the initial volume to the constant level
+            audio.volume = constantVolume;
         });
-      </script>
+    </script>
     <div id="preloader">
         <div id="loading-center">
             <div id="loading-center-absolute">
@@ -134,8 +132,7 @@
                         <div class="main-menu">
                             <nav>
                                 <div class="logo">
-                                    <a href="index.html"><img src="default/logo.png" height="75"
-                                            alt="Logo"></a>
+                                    <a href="index.html"><img src="default/logo.png" height="75" alt="Logo"></a>
                                 </div>
                                 <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
                                     <ul>
@@ -147,7 +144,7 @@
                                         </li>
                                         <li><a href="#">Tokenomics</a>
                                         </li>
-                                        
+
                                         <li><a href="#">
                                                 Socials</a></li>
                                         <li>
@@ -178,7 +175,7 @@
                                 Limitless Oppurutunties, Matchless Potential!!
                             </p>
                             <a href="#" class="btn wow fadeInUp" data-wow-delay="2.2s">BUY GTA
-                                 NOW</a>
+                                NOW</a>
                         </div>
                     </div>
                 </div>
@@ -303,25 +300,29 @@
                         <div class="col-lg-6 order-0 order-lg-2">
                             <div class="about-img">
                                 <img src="homepage/img/images/video_image.png" alt>
-                                <a href="https://youtu.be/W4VTq0sa9yg?si=7TMp_89ak8QoSXci" class="popup-video"><img
-                                        src="homepage/img/icon/play_btn.png" alt></a>
+                                <!-- <a href="https://youtu.be/W4VTq0sa9yg?si=7TMp_89ak8QoSXci" class="popup-video"><img
+                                        src="homepage/img/icon/play_btn.png" alt></a> -->
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="section-title title-style-two mb-45">
-                                <span>about [Token]</span>
-                                <h2>Made for Degens, <span>by Degens</span></h2>
+                                <!-- <span>about [Token]</span> -->
+                                <h2>A storyline created with nothing but <span>Grok AI</span>
+                                </h2>
                             </div>
                             <div class="about-content">
+                                <h3> <span>Wanted</span></h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, voluptas!
+                                    TJ Johnson and Riley Davis are both wanted by federal and local authorities for
+                                    their involvement in murder, drug dealing, bank heist and worst of all, murder of an
+                                    FBI agent.
                                 </p>
                                 <p>
-                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, temporibus voluptatibus architecto dolorum eius illum!
+                                    If you see either of these two, evade all contact and call the 999 immediately.
                                 </p>
-                                <div class="about-btn">
+                                <!-- <div class="about-btn">
                                     <a href="#" class="btn">Buy Now</a>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -499,7 +500,7 @@
             </div>
         </section> -->
 
-        
+
         <div class="area-bg-two">
         </div>
     </main>
@@ -540,12 +541,12 @@
                             </div>
                             <div class="footer-text">
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, doloremque!</p>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quidem nemo velit, sit asperiores at.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil quidem nemo velit,
+                                    sit asperiores at.</p>
                                 <div class="footer-contact">
                                     <ul>
-                                        <li><i class="fas fa-envelope-open"></i><span>Email : </span><a
-                                                href="#" class="__cf_email__"
-                                                >info@token.com</a>
+                                        <li><i class="fas fa-envelope-open"></i><span>Email : </span><a href="#"
+                                                class="__cf_email__">info@token.com</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -568,9 +569,9 @@
                                     </li>
                                     <li>
                                         <a href="#" data-toggle="modal" data-target="#ucpSelectionModal">Telegram
-                                            </a>
+                                        </a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </div>
@@ -596,8 +597,7 @@
                             </div>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="https://www.facebook.com/"><i
-                                                class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="https://www.instagram.com//"><i class="fab fa-instagram"></i></a>
                                     </li>
