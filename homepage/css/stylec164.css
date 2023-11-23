@@ -1094,7 +1094,8 @@ ul.minicart .cart-price .new {
     left: auto;
 }
 .brand-bg {
-    background-image: url(../img/bg/brand_bg.jpg);
+    /* background-image: url(../img/bg/brand_bg.jpg); */
+    background-color: #000;
     background-position: center;
     background-size: cover;
     padding: 60px 0;
