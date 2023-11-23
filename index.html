@@ -1,213 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en">
-  <meta
-    http-equiv="content-type"
-    content="text/html;charset=UTF-8"
-  /><!-- /Added by HTTrack -->
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>GTA VI: GROK DIARIES</title>
-    <meta name="description" content="GTA VI: GROK DIARIES" />
-    <meta name="author" content="GTA World Team" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="GTA VI: GROK DIARIES">
+    <meta name="author" content="GTA World Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="GTA VI: GROK DIARIES" />
     <meta property="og:description" content="GTA VI: GROK DIARIES" />
     <meta property="og:url" content="index.html" />
     <!-- <meta property="og:image" content="newsite/assets/images/gtaw/opengraph.html" /> -->
-    <meta
-      name="csrf-token"
-      content="nqU8wwuWjvRaLUrTnKPOEvzgQRcmvTHwtq3Is5Ga"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.css"
-    />
-    <link rel="shortcut icon" type="image/x-icon" href="default/logo.png" />
+    <meta name="csrf-token" content="nqU8wwuWjvRaLUrTnKPOEvzgQRcmvTHwtq3Is5Ga">
+    <link rel="stylesheet" type="text/css"
+        href="../cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="default/logo.png">
 
-    <link rel="stylesheet" href="homepage/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="homepage/css/animate.min.css" />
-    <link rel="stylesheet" href="homepage/css/magnific-popup.css" />
-    <link rel="stylesheet" href="homepage/css/fontawesome-all.min.css" />
-    <link rel="stylesheet" href="homepage/css/odometer.css" />
-    <link rel="stylesheet" href="homepage/css/aos.css" />
-    <link rel="stylesheet" href="homepage/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="homepage/css/meanmenu.css" />
-    <link rel="stylesheet" href="homepage/css/slick.css" />
-    <link rel="stylesheet" href="homepage/css/default.css" />
-    <link rel="stylesheet" href="homepage/css/stylec164.css?v=9" />
-    <link rel="stylesheet" href="homepage/css/responsive.css" />
-    <link
-      rel="stylesheet"
-      href="homepage/vendor/orlandotm/payment-webfont/style.css"
-    />
+
+    <link rel="stylesheet" href="homepage/css/bootstrap.min.css">
+    <link rel="stylesheet" href="homepage/css/animate.min.css">
+    <link rel="stylesheet" href="homepage/css/magnific-popup.css">
+    <link rel="stylesheet" href="homepage/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="homepage/css/odometer.css">
+    <link rel="stylesheet" href="homepage/css/aos.css">
+    <link rel="stylesheet" href="homepage/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="homepage/css/meanmenu.css">
+    <link rel="stylesheet" href="homepage/css/slick.css">
+    <link rel="stylesheet" href="homepage/css/default.css">
+    <link rel="stylesheet" href="homepage/css/stylec164.css?v=9">
+    <link rel="stylesheet" href="homepage/css/responsive.css">
+    <link rel="stylesheet" href="homepage/vendor/orlandotm/payment-webfont/style.css">
     <style>
-      .btn.lc::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        background-image: url(homepage/img/images/btn_overlay_lc.png);
-        width: 100%;
-        height: 55px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 5px;
-        z-index: -1;
-        transition: 0.3s linear;
-      }
-
-      @media (max-width: 767px) {
-        .btn.wow {
-          margin-top: 12px;
-          margin-right: 0 !important;
+        .btn.lc::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            background-image: url(homepage/img/images/btn_overlay_lc.png);
+            width: 100%;
+            height: 55px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 5px;
+            z-index: -1;
+            transition: .3s linear;
         }
-      }
-    </style>
-  </head>
 
-  <body>
+        @media (max-width: 767px) {
+            .btn.wow {
+                margin-top: 12px;
+                margin-right: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
     <style>
-      audio {
-        display: none;
-      }
+        audio {
+            display: none;
+        }
     </style>
     <audio id="background-audio" autoplay loop>
-      <!-- <source src="default/sound.m4a" type="audio/mpeg"> -->
-      <source src="sound.mp3" type="audio/mpeg" />
+        <!-- <source src="default/sound.m4a" type="audio/mpeg"> -->
+        <source src="sound.mp3" type="audio/mpeg">
+
     </audio>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const audio = document.getElementById("background-audio");
-        const constantVolume = 0.9;
-        let isMouseMoving = false;
-        let volumeTimeout;
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("background-audio");
+            const constantVolume = 0.9;
+            let isMouseMoving = false;
+            let volumeTimeout;
 
-        // Function to set the volume to the maximum level
-        function setMaxVolume() {
-          audio.volume = 1.0;
-        }
+            // Function to set the volume to the maximum level
+            function setMaxVolume() {
+                audio.volume = 1.0;
+            }
 
-        // Function to set the volume back to the constant level
-        function setConstantVolume() {
-          audio.volume = constantVolume;
-        }
+            // Function to set the volume back to the constant level
+            function setConstantVolume() {
+                audio.volume = constantVolume;
+            }
 
-        // Function to start sound and set volume
-        function startSound() {
-          setMaxVolume();
-          audio.play();
-          document.removeEventListener("click", startSound); // Remove the click event listener after starting sound
-        }
+            // Function to start sound and set volume
+            function startSound() {
+                setMaxVolume();
+                audio.play();
+                document.removeEventListener("click", startSound); // Remove the click event listener after starting sound
+            }
 
-        // Add a click event listener to the entire document to start sound
-        document.addEventListener("click", startSound);
+            // Add a click event listener to the entire document to start sound
+            document.addEventListener("click", startSound);
 
-        // Update the audio volume when the mouse moves
-        document.addEventListener("mousemove", function () {
-          if (!isMouseMoving) {
-            isMouseMoving = true;
-            setMaxVolume();
-          }
+            // Update the audio volume when the mouse moves
+            document.addEventListener("mousemove", function () {
+                if (!isMouseMoving) {
+                    isMouseMoving = true;
+                    setMaxVolume();
+                }
 
-          clearTimeout(volumeTimeout);
-          volumeTimeout = setTimeout(function () {
-            isMouseMoving = false;
-            setConstantVolume();
-          }, 1000); // Adjust the delay in milliseconds as needed
+                clearTimeout(volumeTimeout);
+                volumeTimeout = setTimeout(function () {
+                    isMouseMoving = false;
+                    setConstantVolume();
+                }, 1000); // Adjust the delay in milliseconds as needed
+            });
+
+            // Set the initial volume to the constant level
+            audio.volume = constantVolume;
         });
-
-        // Set the initial volume to the constant level
-        audio.volume = constantVolume;
-      });
     </script>
     <div id="preloader">
-      <div id="loading-center">
-        <div id="loading-center-absolute">
-          <img src="homepage/img/icon/preloader.svg" alt />
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <img src="homepage/img/icon/preloader.svg" alt>
+            </div>
         </div>
-      </div>
     </div>
     <header>
-      <div id="sticky-header" class="main-header">
-        <div class="container-fluid container-full-padding">
-          <div class="row">
-            <div class="col-12">
-              <div class="main-menu">
-                <nav>
-                  <div class="logo">
-                    <a href="index.html"
-                      ><img src="default/logo.png" height="75" alt="Logo"
-                    /></a>
-                  </div>
-                  <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
-                    <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li class="show">
-                        <a href="#"> Chart </a>
-                      </li>
-                      <li><a href="#">Uniswap</a></li>
+        <div id="sticky-header" class="main-header">
+            <div class="container-fluid container-full-padding">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-menu">
+                            <nav>
+                                <div class="logo">
+                                    <a href="index.html"><img src="default/logo.png" height="75" alt="Logo"></a>
+                                </div>
+                                <div id="mobile-menu" class="navbar-wrap d-none d-lg-flex">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li class="show">
+                                            <a href="#">
+                                                Chart
+                                            </a>
+                                        </li>
+                                        <li><a href="#">Uniswap</a>
+                                        </li>
 
-                      <li>
-                        <a href="http://t.me/gtavigrokdiaries"> Telegram</a>
-                      </li>
-                      <li>
-                        <a href="http://twitter.com/gtavi_erc20">Twitter</a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://gta-vi-grok-diaries.gitbook.io/gta-vi-grok-diaries/"
-                          id="playersOnline"
-                          ><span id="online_players">Docs</span></a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-              <div class="mobile-menu"></div>
+                                        <li><a href="http://t.me/gtavigrokdiaries">
+                                                Telegram</a></li>
+                                        <li>
+                                            <a href="http://twitter.com/gtavi_erc20" >Twitter</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://gta-vi-grok-diaries.gitbook.io/gta-vi-grok-diaries/"
+                                                id="playersOnline"><span
+                                                    id="online_players">Docs</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </nav>
+                        </div>
+                        <div class="mobile-menu"></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </header>
     <main>
-      <section class="slider-area slider-bg">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-9">
-              <div class="slider-content text-center">
-                <h6 class="wow fadeInDown" data-wow-delay=".2s">
-                  GTA storylines built with GROK AI
-                </h6>
-                <h2 class="tlt fix" data-in-effect="fadeInLeft">
-                  GTA-VI <span>Grok Diaries</span>
-                </h2>
-                <p class="wow fadeInUp" data-wow-delay="2s">
-                  GTA based Telegram/Web based games. We ask Grok AI for the
-                  lore and then we create.. simple.
-                </p>
-                <a href="#" class="btn wow fadeInUp" data-wow-delay="2.2s"
-                  >Play NOW</a
-                >
-                <br />
-                <br />
-                <a
-                  href="https://gta-vi-grok-diaries.gitbook.io/gta-vi-grok-diaries/"
-                  class="btn wow fadeInUp"
-                  data-wow-delay="2.2s"
-                  >Read More</a
-                >
-              </div>
+        <section class="slider-area slider-bg">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-9">
+                        <div class="slider-content text-center">
+                            <h6 class="wow fadeInDown" data-wow-delay=".2s">GTA storylines built with GROK AI
+                            </h6>
+                            <h2 class="tlt fix" data-in-effect="fadeInLeft">GTA-VI <span>Grok Diaries</span> </h2>
+                            <p class="wow fadeInUp" data-wow-delay="2s">
+                                GTA based Telegram/Web based games. We ask Grok AI for the lore and then we
+                                create.. simple.
+                            </p>
+                            <a href="#" class="btn wow fadeInUp" data-wow-delay="2.2s">Play
+                                NOW</a>
+                            <br>
+                            <br>
+                            <a href="https://gta-vi-grok-diaries.gitbook.io/gta-vi-grok-diaries/" class="btn wow fadeInUp" data-wow-delay="2.2s">Read More</a>
+
+                          
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!-- <div class="brand-area brand-bg">
+        </section>
+        <!-- <div class="brand-area brand-bg">
                 <div class="container">
                     <div class="row brand-active">
                         <div class="col-xl-2">
@@ -249,8 +233,10 @@
                 </div>
             </div> -->
 
-      <div class="area-bg-one">
-        <!-- <section class="latest-games-area pt-120">
+
+        <div class="area-bg-one">
+
+            <!-- <section class="latest-games-area pt-120">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-8">
@@ -317,88 +303,80 @@
                 </div>
             </section> -->
 
-        <section class="about-us-area pt-90">
-          <div class="container">
-            <div class="row">
-              <style>
-                @media screen and (min-width: 1000px) {
-                  .about-img {
-                    margin-top: 220px;
-                  }
-                }
-              </style>
-              <div class="col-lg-6 order-0 order-lg-2">
-                <div class="about-img">
-                  <img src="default/replace.jpg" alt />
-                  <!-- <a href="default/vid.mp4" class="popup-video"><img src="homepage/img/icon/play_btn.png"
+
+            <section class="about-us-area pt-90">
+                <div class="container">
+                    <div class="row">
+
+                        <style>
+                            @media screen and (min-width: 1000px) {
+                                .about-img {
+                                margin: 100px auto;
+                            }
+                            }
+                         
+                        </style>
+                        <div class="col-lg-6 order-0 order-lg-2">
+                            <div class="about-img">
+                                <img src="default/replace.jpg" alt>
+                                <!-- <a href="default/vid.mp4" class="popup-video"><img src="homepage/img/icon/play_btn.png"
                                         alt></a> -->
-                </div>
-              </div>
+                            </div>
 
-              <div class="col-lg-6">
-                <div class="section-title title-style-two mb-15">
-                  <!-- <span>about [Token]</span> -->
-                  <h2>
-                    A storyline created with nothing but <span>Grok AI</span>
-                  </h2>
-                </div>
-                <div class="about-content">
-                  <h2>
-                    <span
-                      style="
-                        color: #e4a101;
-                        -webkit-text-stroke-width: 2px;
-                        -webkit-text-stroke-color: black;
-                      "
-                      >Wanted</span
-                    >
-                  </h2>
-                  <style>
-                    @media screen and (max-width: 450px) {
-                      .u-class-1 {
-                        display: flex;
-                      }
+                        </div>
 
-                      .u-class-1 img {
-                        width: 200px !important;
-                        height: 200px !important;
-                      }
-                    }
-                  </style>
-                  <div class="u-class-1">
-                    <img
-                      src="/default/cop2.jpg"
-                      alt=""
-                      width="200"
-                      height="200"
-                    />
-                    <img
-                      src="/default/cop3.jpg"
-                      alt=""
-                      width="200"
-                      height="200"
-                    />
-                  </div>
+                        <div class="col-lg-6">
+                            <div class="section-title title-style-two mb-15">
+                                <!-- <span>about [Token]</span> -->
+                                <h2>A storyline created with nothing but <span>Grok AI</span>
+                                </h2>
+                            </div>
+                            <div class="about-content">
+                                <h2>
 
-                  <p>
-                    TJ Johnson and Riley Davis are both wanted by federal and
-                    local authorities on multiple cases of robberies, intent to
-                    supply and worst of all, murder of an FBI agent.
-                  </p>
-                  <p>
-                    If you see either if these two, evade all contact and call
-                    the 999 immediately.
-                  </p>
-                  <!-- <div class="about-btn">
+
+                                    <span
+                                        style="color: #e4a101; -webkit-text-stroke-width: 2px; -webkit-text-stroke-color: black;">Wanted</span>
+                                </h2>
+                                <style>
+                                    @media screen and (max-width: 450px) {
+                                        .u-class-1{
+                                            display: flex;
+                                        }
+
+                                        .u-class-1 img{
+                                            width: 200px !important; 
+                                            height: 200px !important;
+                                        }
+                                    }
+
+                                  
+                                </style>
+                                <div class="u-class-1">
+                                    <img src="/default/cop2.jpg" alt="" width="200" height="200">
+                                    <img src="/default/cop3.jpg" alt="" width="200" height="200">
+                                </div>
+                               
+
+                                <p>
+                                    TJ Johnson and Riley Davis are both wanted by federal and local authorities on
+                                    multiple cases of robberies, intent to supply and worst of all, murder of an FBI
+                                    agent.
+
+                                </p>
+                                <p>
+                                    If you see either if these two, evade all contact and call the 999 immediately.
+                                </p>
+                                <!-- <div class="about-btn">
                                     <a href="#" class="btn">Buy Now</a>
                                 </div> -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <!-- <section class="game-manage-area game-mange-bg pt-120 pb-120">
+            </section>
+        </div>
+        <!-- <section class="game-manage-area game-mange-bg pt-120 pb-120">
             <div class="container">
                 <div class="tournament-area">
                     <div class="row">
@@ -507,7 +485,8 @@
             </div>
         </section> -->
 
-      <!-- <section class="features-area features-bg pt-120 pb-70">
+
+        <!-- <section class="features-area features-bg pt-120 pb-70">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8">
@@ -568,28 +547,33 @@
             </div>
         </section> -->
 
-      <div class="area-bg-two"></div>
+
+        <div class="area-bg-two">
+        </div>
     </main>
 
     <footer>
-      <div class="copyright-wrap">
-       
-            <div class="copyright-text" >
-              <p style="text-align: center">
-                Copyright ©
-                <script
-                  data-cfasync="false"
-                  src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-                ></script>
-                <script>
-                  document.write(new Date().getFullYear());
-                </script>
-                <a href="#">Grok Diaries</a> All Rights Reserved.
-              </p>
-            </div>
 
-      </div>
+        <div class="copyright-wrap" style="text-align: center;">
+            
+                
+                   
+                        <div class="copyright-text" style="text-align: center;">
+                            <p style="text-align: center;">Copyright ©
+                                <script data-cfasync="false"
+                                    src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                                <script>document.write(new Date().getFullYear())</script> <a href="#">Grok Diaries</a> All
+                                Rights Reserved.
+                            </p>
+                        </div>
+                    
+                    
+                
+           
+        </div>
     </footer>
+
+
 
     <script src="homepage/js/vendor/jquery-3.4.1.min.js"></script>
     <script src="homepage/js/popper.min.js"></script>
@@ -610,21 +594,13 @@
     <script src="homepage/js/jquery.magnific-popup.min.js"></script>
     <script src="homepage/js/plugins.js"></script>
     <script src="homepage/js/main.js"></script>
-    <script
-      src="../cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
-      integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y="
-      crossorigin="anonymous"
-    ></script>
+    <script src="../cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"
+        integrity="sha256-1A78rJEdiWTzco6qdn3igTBv9VupN3Q1ozZNTR4WE/Y=" crossorigin="anonymous"></script>
     <script src="../cdn.jsdelivr.net/npm/js-cookie%402/src/js.cookie.min.js"></script>
-    <script
-      src="../cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.js"
-      data-cfasync="false"
-    ></script>
+    <script src="../cdn.jsdelivr.net/npm/cookieconsent%403/build/cookieconsent.min.js" data-cfasync="false"></script>
 
-    <script
-      src="../www.google.com/recaptcha/apifef7.js?hl=en"
-      async
-      defer
-    ></script>
-  </body>
+    <script src="../www.google.com/recaptcha/apifef7.js?hl=en" async defer></script>
+</body>
+
+
 </html>
