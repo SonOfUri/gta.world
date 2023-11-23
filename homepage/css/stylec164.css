@@ -1256,7 +1256,7 @@ ul.minicart .cart-price .new {
     padding-bottom: 35px;
     position: relative;
 }
-.title-style-two::before,
+/* .title-style-two::before,
 .title-style-three::before {
     content: "";
     position: absolute;
@@ -1266,7 +1266,7 @@ ul.minicart .cart-price .new {
     width: 270px;
     height: 13px;
     background-repeat: no-repeat;
-}
+} */
 .title-style-three::before {
     background-image: url(../img/images/title_bar02.png);
 }
