@@ -1237,7 +1237,7 @@ ul.minicart .cart-price .new {
     padding: 15px;
     background-color: transparent;
     box-shadow: 0 5px 12.09px 0.91px rgba(0, 0, 0, 0.23);
-    position: relative;
+    /* position: relative; */
 }
 .about-img > img {
     width: 100%;
